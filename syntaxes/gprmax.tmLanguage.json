@@ -1,0 +1,25 @@
+{
+  "scopeName": "source.gprmax",
+  "patterns": [
+    {
+      "name": "keyword.control.gprmax",
+      "match": "#(title|domain|dx_dy_dz|time_window|waveform|hertzian_dipole|rx|src_steps|rx_steps|geometry_objects_read|geometry_view)"
+    },
+    {
+      "name": "constant.numeric.gprmax",
+      "match": "\\b\\d+(\\.\\d+)?(e[+-]?\\d+)?\\b"
+    },
+    {
+      "name": "string.quoted.gprmax",
+      "match": "\\\"[^\\\"]*\\\"|'[^']*'|[a-zA-Z0-9_\\-/]+\\.(h5|txt)"
+    }
+  ],
+  "repository": {},
+  "names": [],
+  "uuid": "gpr-infile-highlighter-uuid",
+  "fileTypes": [
+    "in"
+  ],
+  "name": "gprMax In File",
+  "injectionSelector": "L:text.in.gprmax"
+}
